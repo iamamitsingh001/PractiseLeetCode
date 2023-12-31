@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PractiseLeetCode.DSLinkedList
+﻿namespace PractiseLeetCode.DSLinkedList
 {
+    /// <summary>
+    /// Class represents Node
+    /// </summary>
     public class Node
     {
         public object Data = null;
