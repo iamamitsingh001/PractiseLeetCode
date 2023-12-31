@@ -24,7 +24,6 @@ namespace PractiseLeetCode.DSLinkedList
                 tail.Next = newItem;
                 tail = newItem;
             }
-
         }
         public void AddFirst(object data)
         {
