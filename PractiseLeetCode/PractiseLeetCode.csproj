@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F8D7282-D43D-447D-B6E2-FB1233CB1655}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PractiseLeetCode</RootNamespace>
+    <AssemblyName>PractiseLeetCode</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PractiseLeetCode.DSLinkedList.LinkedListCaller</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayRotation.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\AbstractInterface\IComputerFactory.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\AbstractProduct\IBrand.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\AbstractProduct\IProcessor.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\AbstractProduct\ISystemType.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\Client\EmployeeSystemManager.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\ConcreteFactory\DellFactory.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\ConcreteFactory\EmployeeSystemFactory.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\ConcreteFactory\MacFactory.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\ConcreteProduct\DELL.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\ConcreteProduct\MAC.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\ConcreteProduct\Processor.cs" />
+    <Compile Include="DesignPattern\AbstractFactory\ConcreteProduct\SystemType.cs" />
+    <Compile Include="DesignPattern\EagerLoadingSingleton.cs" />
+    <Compile Include="DesignPattern\FactoryMethod\BaseEmployeeFactory.cs" />
+    <Compile Include="DesignPattern\FactoryMethod\ContractEmployeeFactory.cs" />
+    <Compile Include="DesignPattern\FactoryMethod\EmployeeManagerFactoryNew.cs" />
+    <Compile Include="DesignPattern\FactoryMethod\PermanentEmployeeFactory.cs" />
+    <Compile Include="DesignPattern\Factory\Employee.cs" />
+    <Compile Include="DesignPattern\Factory\EmployeeManagerFactory.cs" />
+    <Compile Include="DesignPattern\Factory\Manager\PermanentEmployeeManager.cs" />
+    <Compile Include="DesignPattern\Factory\Manager\ContractEmployeeManager.cs" />
+    <Compile Include="DesignPattern\Factory\Manager\IEmployeeManager.cs" />
+    <Compile Include="DesignPattern\LazyLoadingSingleton.cs" />
+    <Compile Include="DesignPattern\Singleton.cs" />
+    <Compile Include="DSLinkedList\LinkedList.cs" />
+    <Compile Include="DSLinkedList\LinkedListCaller.cs" />
+    <Compile Include="DSLinkedList\LinkedListWithGenerics.cs" />
+    <Compile Include="DSLinkedList\LinkedListWithTailNode.cs" />
+    <Compile Include="DSLinkedList\Node.cs" />
+    <Compile Include="LinqPractise\AggregateOperators.cs" />
+    <Compile Include="LinqPractise\LinqProgram.cs" />
+    <Compile Include="LinqPractise\Program.cs" />
+    <Compile Include="LinqPractise\ProjectionOperator.cs" />
+    <Compile Include="MajorityElements.cs" />
+    <Compile Include="MergeSortedArray.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveDuplicate2.cs" />
+    <Compile Include="RemoveDuplicatesNumbers.cs" />
+    <Compile Include="RemoveElementFromArray.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
