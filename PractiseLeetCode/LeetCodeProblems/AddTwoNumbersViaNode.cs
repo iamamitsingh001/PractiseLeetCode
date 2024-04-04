@@ -11,7 +11,7 @@ namespace PractiseLeetCode.LeetCodeProblems
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
             ListNode resultNode = new ListNode();
-
+            return resultNode;
         }
     }
     public class ListNode
