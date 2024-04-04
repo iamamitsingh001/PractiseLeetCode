@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>PractiseLeetCode.DSLinkedList.LinkedListCaller</StartupObject>
+    <StartupObject>PractiseLeetCode.LeetCodeProblems.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -79,6 +79,10 @@
     <Compile Include="DSLinkedList\LinkedListWithGenerics.cs" />
     <Compile Include="DSLinkedList\LinkedListWithTailNode.cs" />
     <Compile Include="DSLinkedList\Node.cs" />
+    <Compile Include="KadensAlgo\KadensImplementation.cs" />
+    <Compile Include="LeetCodeProblems\AddTwoNumbersViaNode.cs" />
+    <Compile Include="LeetCodeProblems\Program.cs" />
+    <Compile Include="LeetCodeProblems\TwoSumSolution.cs" />
     <Compile Include="LinqPractise\AggregateOperators.cs" />
     <Compile Include="LinqPractise\LinqProgram.cs" />
     <Compile Include="LinqPractise\Program.cs" />
